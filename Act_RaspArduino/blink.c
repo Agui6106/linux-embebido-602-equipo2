@@ -1,5 +1,6 @@
 #include <avr/io.h>
 #include <util/delay_basic.h>
+#define F_CPU 16000000UL
 
 int main (void)
 {
