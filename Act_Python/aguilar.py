@@ -64,7 +64,6 @@ if __name__ == '__main__':
 
     point2 = Point3D(4,5,6)
 
-    print
 
 
 
