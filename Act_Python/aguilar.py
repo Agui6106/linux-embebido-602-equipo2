@@ -1,7 +1,8 @@
 
 def my_func(x:int,y:int)->int:
     print("x = {}".format(x))
-    print(f"y = {y}")
+    print(f"{y=}")
+    return x+y
 
 def my_2nd_func(*args,**kwargs)->int:
     print(args[0])
@@ -10,6 +11,20 @@ def my_2nd_func(*args,**kwargs)->int:
     y = kwargs.get('power')
 
     return x**y
+
+# CLASES #
+class Point:
+    name:str = 'Clase Punto'
+    def __init__(self, x:int,y:int) -> None:
+        self.x = x
+        self.y = y
+
+# pasamos por herencia
+class Point3D(Point):
+    def __init__(self, x: int, y: int, z: int) :
+        self.z = z
+        super().__init__(x, y)
+
 
 # Downder var
 if __name__ == '__main__':
@@ -37,11 +52,22 @@ if __name__ == '__main__':
         (1,1) : 0,
     }
 
+    # Funcion 2
     print('Second Function')
-
     print(my_2nd_func(*variables,power=3,var=3))
 
     print(var_dict)
+    print("XOR(1,0)->", xor_dict[(1,0)])
+
+    # Creamos objeto de clase point
+    point1 = Point(5,6)
+
+    point2 = Point3D(4,5,6)
+
+    print
+
+
+
 
 
 
