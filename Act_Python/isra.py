@@ -5,13 +5,25 @@ def my_function(x,y) -> int:
     print(f"{y = }")
     return x + y
 
-################### Función usando args
+################### Función usando args y kwargs ######################
 def my_second(*args,**kwargs)->int:
     print(args[0])
     print(kwargs.get('power'))
     x = args[0]
     y = kwargs.get('power')
     return x**y
+
+################## Clases en Python ############################
+class Point:
+    name: str = "Clase Punto"
+    def __init__(self ,x:int, y:int) -> None:
+        self.x = x
+        self.y = y
+
+class Point3D(Point):
+    def __init__(self,x:int, y:int, z:int) -> None:
+        self.z = z
+        super().__init__(x,y)
 
 ####################### Main ############################################
 if __name__ == "__main__":
@@ -27,5 +39,15 @@ if __name__ == "__main__":
     #   'var2' : 2,
     #   3      : 3,
     #}
-    
-    print(my_second(2,3))
+    xor_dict = {
+        (0,0) : 0,
+        (0,1) : 1,
+        (1,0) : 1,
+        (1,1) : 0,
+    }
+    print(my_second(2, 2, power = 3, var = 4))
+
+    print("XOR (1,0) -> ", xor_dict[(1,0)])
+
+    point = Point(2,3)
+    point2 = Point3D(1,2,3)

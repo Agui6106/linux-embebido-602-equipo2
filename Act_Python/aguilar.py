@@ -63,3 +63,6 @@ if __name__ == '__main__':
     point1 = Point(5,6)
 
     point2 = Point3D(4,5,6)
+
+    point = Point(2,3)
+    point2 = Point3D(1,2,3)
