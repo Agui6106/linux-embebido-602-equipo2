@@ -72,4 +72,5 @@ if __name__ =='__main__':
     
     point2 = Point3D(4,5,6)
     
+    #Va a imprimir el nombre de "Clase punto", porque lo hereda
     print(point2.name)
