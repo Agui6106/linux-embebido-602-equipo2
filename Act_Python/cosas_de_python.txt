@@ -1,0 +1,25 @@
+PEP8 - Lineamientos para programar en Python
+
+* Identacion
+* Imports
+* Class naming
+* Variable naming
+* Constantes
+* Tabs
+
+Variables en py
+* tuple - Coleecion de objetos no modifcable
+* set - Lista INMUTABLE(No c puede cambiar ni repetir valores)
+* list - Lista. xd
+* dict - diccionario
+
+Type hints 
+x: int = 0
+name : str = "El Ferras"
+
+Funciones
+def my_func(x:int,y:int)->
+    return x+y
+
+*args -> Son argumentos posicionales y los trata como tupla 
+*kwargs -> Son argumentos de lalve valor
