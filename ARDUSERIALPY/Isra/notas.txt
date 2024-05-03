@@ -1,0 +1,29 @@
+Importar librerias (TERMINAL)
+import os, math, random, pygame, time, typing, re
+x = 3.
+type (x)          // Es float, nos dice el tipo de dato
+
+VEM (Virtual Environment)
+
+python -m venv env: Para crear un ambente Virtual
+
+Inicializar el ambiente virtual:
+source env/bin/activate
+
+deactivate (Salir del Environment)
+
+pip install pyserial
+
+pip install --upgrade pip
+
+Para encontrar el puerto en port = serial.Serial(port = '0',)
+ls /dev/ttyA*
+
+Para poder correr tu archivo python
+python example.py
+
+Crear los requerimientos para poder correr programa
+pip freeze > requirements.txt
+
+Para que la otra persona pueda instalar los requisitos
+pip install -r requirements.txt
