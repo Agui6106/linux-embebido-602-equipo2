@@ -1,0 +1,18 @@
+Crear ambiente:
+    python -m venv env
+
+Entrar en el ambiente:
+    source env/bin/activate
+
+Salir del ambiente:
+    deactivate
+
+Insalar fastapi:
+    // Debemos de estar en el ambiente virtual
+    pip install fastapi
+
+Pasar la libreria a los requisitos:
+    pip freeze > requirements.txt
+
+Correr el programa:
+    python -m web_uploader.app
